@@ -1,0 +1,39 @@
+     /* The specificity of this is 1 */
+     h1 {
+        color: aqua;
+      }
+
+      /* The specificity of this is 10 */
+      .first {
+        color: purple;
+      }
+
+      /* The specificity of this is 10 */
+      .second {
+        color: yellow;
+      }
+
+      /* The specificity of this is 10 */
+      .third {
+        color: red;
+      }
+
+      /* The specificity of this is 1 + 10 = 11 */
+      h1.third {
+        color: red;
+      }
+
+      /* This is an exaple of attribute selector */
+      /* The specificity of this is 10 */
+      [data-x="a"] {
+        /* background-color: aquamarine !important; */
+        color: maroon;
+      }
+
+      /* Quick Quiz
+What will be the specificity value of the following selector: */
+       /* The specificity of this is 41 */
+       /* Explaniation: 1 (element) + 20 (classes) + 10 (attribute) + 10 (pseudo-class) = 41. */
+      a.harryclass.rohan-class[href]:hover {
+        color: beige;
+      }
