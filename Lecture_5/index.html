@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images, Lists and Tables</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img width="230px" src="html.jpeg" alt="image not load">
+
+    <table>
+        <caption>Student Details</caption>
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Roll No.</th>
+            <th>Fav Lang</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Rutya</td>
+            <td>19</td>
+            <td>SIT2301</td>
+            <td>Javascript</td>
+        </tr>
+        <tr>
+            <td>Sam</td>
+            <td>20</td>
+            <td colspan="2" rowspan="2">SIT2302</td>
+            <!-- <td>Python</td> -->
+        </tr>
+        <tfoot>
+            <td colspan="2">Charlie</td>
+            <!-- <td colspan="2">23</td> -->
+        </tfoot>
+    </tbody>
+    </table>
+
+    <!-- unordered list -->
+    <ul type="square"> 
+        <li>Rutya</li>
+        <li>Rohan</li>
+        <li>Shubham</li>
+    </ul>
+    <!-- You can specify the style of bullet points using the type attribute. It supports three values:
+    1.disc - default bullet style
+    2.square
+    3.circle -->
+
+    <!-- ordered list -->
+    <ol start="3">
+        <li>Rutya</li>
+        <li>Rohan</li>
+        <li>Shubham</li>
+    </ol>
+    <!-- The type attribute specifies the style of numbering. You have several options:
+    1.Uppercase Roman Numerals: Use type="I"
+    2.Lowercase Roman Numerals: Use type="i"
+    3.Arabic Numerals: Use type="1" (This is the default if the type attribute is not specified)
+    4.Lowercase Alphabetical Letters: Use type="a"
+    5.Uppercase Alphabetical Letters: Use type="A" -->
+
+    <h1>HTML Definition List</h1>
+    <dl>
+      <dt>HTML</dt>
+      <dd>HyperText Markup Language: The standard language for creating web pages.</dd>
+  
+      <dt>CSS</dt>
+      <dd>Cascading Style Sheets: A stylesheet language used for describing the look and formatting of a document written in HTML.</dd>
+  
+      <dt>JavaScript</dt>
+      <dd>A programming language commonly used in web development to add interactive features.</dd>
+    </dl>
+    
+</body>
+</html>

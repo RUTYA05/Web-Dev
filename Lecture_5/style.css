@@ -1,0 +1,11 @@
+td{
+    border: 2px solid aqua;
+}
+td{
+    border: 2px solid aqua;
+}
+table,th,tr{
+    border: 2px solid aqua;
+    border-radius: 5px;
+    border-collapse: collapse;
+}
