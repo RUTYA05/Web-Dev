@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Important Note: 
+Static - this is the default value, all elements are in order as they appear in the document.
+Relative - the element is positioned relative to its normal position.
+Absolute - the element is positioned absolutely to its first positioned parent.
+Fixed - the element is positioned related to the browser window.
+Sticky - the element is positioned based on the user’s scroll position. */
+.box{
+    height: 150px;
+    width: 60vw;
+    border: 2px solid black;
+    padding: 3px;
+    margin: 3px;
+}
+.box1{
+    background-color: aqua;
+    /* position: absolute;
+    top: 0px;    
+    left: 150px; */
+    /* position: sticky;
+    top: 0px; */
+}
+.box2{
+    background-color: azure;
+    /* position: relative;
+    top: 33px;
+    left: 56px;
+    z-index: 1; */
+    /* Note : For using z-index you have to specifiad that element as a positioin:relative,absolute,sticty,or fixed */
+}
+.box3{
+    background-color: antiquewhite;
+    /* position: fixed;
+    bottom: 0px;
+    left: 25vw;
+    height: 100px; */
+}
+.box4{
+    background-color: purple;
+}   
+.parent{
+    padding: 3px;
+    margin: 34px;
+    border: 2px solid purple;
+    position: relative;
+
+    /* Exception: Transform, filter, or perspective properties can also make an element appear as positiioned */
+    /* transform: translate(0); */
+    /* filter: invert(0);
+    perspective: 0em; */
+
+}
