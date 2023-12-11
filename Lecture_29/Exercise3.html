@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 3</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        font-family: "Baloo Bhai 2", sans-serif;
+        box-sizing: border-box;
+      }
+      .container {
+        font-family: "Baloo Bhai 2", sans-serif;
+        border: 1px solid black;
+        width: 30vw;
+        height: 500px;
+        border-radius: 10px;
+      }
+      .container > img {
+        border-radius: 10px;
+        margin: 5px;
+        position: relative;
+        width: 362px;
+        left: 4px;
+        top: 5px;
+      }
+
+      .buttons {
+        border: 1px solid black;
+        border-radius: 20px;
+        padding: 6px;
+        margin: 7px;
+        width: 75px;
+        position: relative;
+        top: 11px;
+        left: 5px;
+        font-weight: bold;
+        font-size: 1em;
+      }
+      div > h1 {
+        position: relative;
+        left: 8px;
+      }
+      p {
+        position: relative;
+        left: 8px;
+        top: -28px;
+        font-size: 15px;
+      }
+      .btn {
+        border: 1px solid #9cdbff;
+        border-radius: 20px;
+        padding: 6px;
+        margin: 7px;
+        width: 110px;
+        position: relative;
+        top: -15px;
+        left: 116px;
+        font-weight: bolder;
+        font-size: 1.1em;
+        color: #046ab6;
+        background-color: #9cdbff;
+      }
+      #mainContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Q : Card.png is a file which contains a card image. Write html and css code to design this card  -->
+    <div id="mainContainer">
+
+        <div class="container">
+            <img src="card.jpg" alt="" />
+            <div>
+                <input class="buttons" type="button" value="Nature" />
+                <input class="buttons" type="button" value="Lake" />
+            </div>
+            <h1>A alone boy</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit maiores
+                numquam tenetur quia, obcaecati esse similique corrupti dolor repellat
+                nisi.
+            </p>
+            <input type="button" value="Read More" class="btn" />
+        </div>
+    </div>
+    </body>
+    </html>
